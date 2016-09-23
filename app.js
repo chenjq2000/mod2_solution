@@ -32,20 +32,20 @@ function ShoppingListCheckOffService() {
   var service = this;
 
   // List of shopping items
-  var toBuyListems = [{ name: "cookies", quantity: 10 },{ name: "apple", quantity: 5 }];
+  var toBuyListItems = [{ name: "cookies", quantity: 10 },{ name: "apple", quantity: 5 }];
   var boughtItems = [];
 
 
 
   service.buy= function (itemIdex) {
-    var boughtItem = toBuyListems.splice(itemIdex, 1);
+    var boughtItem = toBuyListItems.splice(itemIdex, 1);
     boughtItems.push(boughtItem);
   };
   service.getBoughtItems = function () {
     return boughtItems;
   };
   service.getToBuyItems = function () {
-    return toBuyListems;
+    return toBuyListItems;
   };
 }
 
