@@ -33,16 +33,16 @@ function ShoppingListCheckOffService() {
 
   // List of shopping items
   var toBuyListItems = [{ name: "cookies", quantity: 10 },{ name: "apple", quantity: 5 }];
-  var boughtItems = [{ name: "orange", quantity: 2 },{ name: "bana", quantity: 2 }];;
+  var boughtItems = [];
 
 
 
   service.buy= function (itemIdex) {
     var boughtItem = toBuyListItems.splice(itemIdex, 1);
-    boughtItems.push(boughtItem);
+    this.boughtItems.push(boughtItem);
   };
   service.getBoughtItems = function () {
-    return boughtItems;
+    return this.boughtItems;
   };
   service.getToBuyItems = function () {
     return toBuyListItems;
