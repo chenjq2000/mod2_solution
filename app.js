@@ -39,10 +39,10 @@ function ShoppingListCheckOffService() {
 
   service.buy= function (itemIdex) {
     var boughtItem = toBuyListItems.splice(itemIdex, 1);
-    this.boughtItems.push(boughtItem);
+    boughtItems.push(boughtItem);
   };
   service.getBoughtItems = function () {
-    return this.boughtItems;
+    return boughtItems;
   };
   service.getToBuyItems = function () {
     return toBuyListItems;
