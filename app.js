@@ -33,7 +33,7 @@ function ShoppingListCheckOffService() {
 
   // List of shopping items
   var toBuyListItems = [{ name: "cookies", quantity: 10 },{ name: "apple", quantity: 5 }];
-  var boughtItems = [];
+  var boughtItems = [{ name: "orange", quantity: 2 },{ name: "bana", quantity: 2 }];;
 
 
 
